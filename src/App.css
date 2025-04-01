@@ -1,38 +1,109 @@
+/*
+--- 01 TYPOGRAPHY SYSTEM
+--- FONT WEIGHTS:
+-Default: 400;
+-Medium: 500;
+-Semi-Bold: 600;
+-Bold: 700;
+-Extra Bold: ;
+    
+--- LINE HEIGHTS:
+Default:1
+Heading 1.1
+
+Paragraph default 1.6
+
+--- LETTER SPACING
+-  -0.5px
+-   0.75px
+
+--- 02 COLOR
+- Primary:
+Primary: #eb2f64
+- Tints:
+Primary light: #FF3366
+Primary dark: #BA265D
+- Shades:  
+Grey light 1: #faf9f9
+Grey light 2: #f4f2f2
+Grey light 3: #f0eeee
+Grey light 4: #ccc
+- Greys:
+Grey dark 1: #333
+Grey dark 2: #777
+Grey dark 3: #999
+
+--- 05 SHADOWS
+box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.3);
+box-shadow: ;
+box-shadow: ;
+text-shadow: ;
+
+--- 06 BORDER-RADIUS
+-Default:;
+Medium:;
+--- FONT SIZE SYSTEM (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+
+--- 07 WHITE SPASE
+ - SPACING SYSTEM (px)
+   2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+*/
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+*:focus {
+  outline: none;
+}
+html {
+  /*10 / 16 = 0.625 * 100 = 62.5 */
+  overflow-x: hidden;
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+  color: #777;
+  line-height: 1;
+  font-weight: 400;
+  overflow-x: hidden;
+}
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+  background-size: cover;
+  background-repeat: no-repeat;
+  max-width: 155rem;
+  margin: 0 auto;
+  background-image: linear-gradient(to right bottom, #eb2f64, #ff3366);
   min-height: 100vh;
+  /* Add Flexbox */
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
-
-.App-link {
-  color: #61dafb;
+.container {
+  width: 135rem;
+  min-height: 80vh;
+  margin: 3rem auto;
+  background-color: #fff;
+  box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.3);
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media (max-width: 75em) {
+  .container {
+    margin: 0 !important;
+    max-width: 100%;
+    width: 100%;
   }
-  to {
-    transform: rotate(360deg);
+}
+@media (max-width: 68.75em) {
+  html {
+    /*10 / 16 = 0.625 * 100 = 62.5 */
+    overflow-x: hidden;
+    font-size: 50%;
   }
 }

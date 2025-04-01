@@ -1,0 +1,262 @@
+.detail {
+  display: flex;
+  gap: 4.5rem;
+  padding: 4.5rem;
+  background-color: #faf9f9;
+  border-bottom: 1px solid #faf9f9;
+}
+.description {
+  background-color: #fff;
+  box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.06);
+  flex: 0 0 60%;
+  padding: 3rem;
+  font-size: 1.4rem;
+}
+.userReviews {
+  background-color: #fff;
+  box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.06);
+  flex: 1;
+}
+.paragraph {
+  line-height: 1.5;
+}
+.paragraph:not(:last-of-type) {
+  margin-bottom: 2rem;
+}
+.list {
+  list-style: none;
+  margin: 3rem 0;
+  padding: 3rem 0;
+  border-bottom: 1px solid #faf9f9;
+  display: flex;
+  flex-wrap: wrap;
+}
+.listItem {
+  flex: 0 0 50%;
+  margin-bottom: 0.7rem;
+}
+.detailIcon {
+  width: 1rem;
+  height: 1rem;
+  margin-right: 7px;
+  fill: #eb2f64;
+}
+.recommend {
+  color: #999;
+  font-size: 1.3rem;
+  display: flex;
+  align-items: center;
+}
+.recommendFriends {
+  display: flex;
+}
+.recommendCount {
+  margin-right: auto;
+}
+.recommendPhoto {
+  box-sizing: content-box;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  border: 3px solid #fff;
+}
+.recommendPhoto:not(:last-of-type) {
+  margin-right: -2rem;
+}
+/*  */
+.userReviews {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.review {
+  background-color: #fff;
+  box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.06);
+  padding: 3rem;
+  margin-bottom: 3.5rem;
+  font-size: 1.4rem;
+  position: relative;
+  overflow: hidden;
+}
+.review::before {
+  content: "\201c";
+  position: absolute;
+  top: -2.75rem;
+  left: -1rem;
+  font-size: 20rem;
+  color: #f4f2f2;
+  font-family: sans-serif;
+  line-height: 1;
+  z-index: 1;
+}
+.reviewText {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+  line-height: 1.5;
+  z-index: 10;
+  position: relative;
+}
+
+.reviewUser {
+  display: flex;
+  align-items: center;
+}
+.reviewPhoto {
+  height: 4.5rem;
+  width: 4.5rem;
+  border-radius: 50%;
+  display: block;
+  margin-right: 1.5rem;
+}
+.reviewUserBox {
+  margin-right: auto;
+}
+.reviewUserName {
+  font-size: 1.1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 0.4rem;
+}
+.reviewUserDate {
+  font-size: 1rem;
+  color: #999;
+}
+.reviewRating {
+  color: #eb2f64;
+  font-size: 2.2rem;
+  font-weight: 300;
+}
+.btnInline {
+  border: none;
+  color: #eb2f64;
+  font-size: inherit;
+  border-bottom: 1px solid currentColor;
+  background-color: transparent;
+  display: inline-block;
+  cursor: pointer;
+  transition: all 0.3s;
+  align-self: center;
+  font-size: 1.4rem;
+}
+.btnInline span {
+  margin-left: 3px;
+  transition: margin-left 0.3s;
+}
+.btnInline span:hover {
+  margin-left: 8px;
+}
+.btnInline:hover {
+  color: #333;
+}
+.btnInline:focus {
+  outline: none;
+  animation: pulsate 1s infinite;
+}
+@keyframes pulsate {
+  0% {
+    transform: scale(1);
+    box-shadow: none;
+  }
+
+  50% {
+    transform: scale(1.1);
+    box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.25);
+  }
+
+  100% {
+    transform: scale(1);
+    box-shadow: none;
+  }
+}
+/*  */
+.cta {
+  padding: 3.5rem 0;
+  text-align: center;
+}
+.ctaBookNow {
+  text-transform: uppercase;
+  font-size: 1.8rem;
+  font-weight: 300;
+  margin-bottom: 2.5rem;
+}
+.btnCta {
+  font-size: 1.5rem;
+  border: none;
+  font-weight: 300;
+  text-transform: uppercase;
+  border-radius: 100px;
+  background-image: linear-gradient(to right, #eb2f64, #ba265d);
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.2s;
+  cursor: pointer;
+  width: 280px; /* Set a fixed width */
+  height: 60px; /* Set a fixed height */
+}
+.btnCtaLink:link {
+  color: #f4f2f2;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.btnCtaVisible,
+.btnCtaUnvisible {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease-in-out;
+}
+.btnCtaUnvisible {
+  transform: translateY(-100%);
+}
+.btnCta:hover .btnCtaVisible {
+  transform: translateY(100%);
+  background-image: linear-gradient(to left, #eb2f64, #ba265d);
+}
+
+.btnCta:hover .btnCtaUnvisible {
+  transform: translateY(0);
+}
+.btnCta:focus {
+  outline: none;
+  animation: pulsate 1s infinite;
+}
+@media (max-width: 56.25em) {
+  .detail {
+    padding: 3rem;
+    display: flex;
+    gap: 3rem;
+  }
+  .description {
+    padding: 2rem;
+  }
+  .review {
+    padding: 2rem;
+    margin-bottom: 3rem;
+  }
+  .cta {
+    padding: 2.5rem 0;
+  }
+  .recommendPhoto {
+    box-sizing: content-box;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    border: 3px solid #fff;
+  }
+}
+@media (max-width: 37.5em) {
+  .detail {
+    display: flex;
+    flex-direction: column;
+    row-gap: 3rem;
+  }
+  .description {
+  }
+}

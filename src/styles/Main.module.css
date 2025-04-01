@@ -1,0 +1,125 @@
+.mainContent {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.hotelView {
+  background-color: #fff;
+}
+.gallery {
+  display: flex;
+  justify-content: space-between;
+}
+.galleryItem {
+}
+.galleryPhoto {
+  width: 100%;
+  display: block;
+}
+/*  */
+.overview {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #faf9f9;
+  align-items: center;
+}
+.overviewItem {
+  display: flex;
+  align-items: center;
+}
+.overviewHeading {
+  font-size: 2.25rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 1.5rem 3rem;
+}
+.overviewStars {
+  /* flex: 1; */
+  margin-right: auto;
+}
+.overviewIconStar {
+  width: 1.75rem;
+  height: 1.75rem;
+  fill: #eb2f64;
+}
+.overviewLocation {
+  flex: 1;
+  display: flex;
+  vertical-align: center;
+}
+.overviewIconLocation {
+  width: 1.75rem;
+  height: 1.75rem;
+  fill: #eb2f64;
+  margin-right: 0.5rem;
+}
+.btnInline {
+  border: none;
+  color: #eb2f64;
+  font-size: inherit;
+  border-bottom: 1px solid currentColor;
+  background-color: transparent;
+  display: inline-block;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.btnInline:hover {
+  color: #333;
+}
+.btnInline:focus {
+  outline: none;
+  animation: pulsate 1s infinite;
+}
+@keyframes pulsate {
+  0% {
+    transform: scale(1);
+    box-shadow: none;
+  }
+
+  50% {
+    transform: scale(1.1);
+    box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.25);
+  }
+
+  100% {
+    transform: scale(1);
+    box-shadow: none;
+  }
+}
+.overviewRating {
+  background-color: #eb2f64;
+  color: #fff;
+  margin-left: 3rem;
+  align-self: stretch;
+  padding: 1.25rem 2.25rem;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.overviewRatingAverage {
+  font-size: 2.25rem;
+}
+.overviewRatingCount {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+}
+@media (max-width: 37.5em) {
+  .overviewHeading {
+    font-size: 1.8rem;
+
+    padding: 1.25rem 2rem;
+  }
+  .overviewRating {
+    background-color: #eb2f64;
+    color: #fff;
+    margin-left: 3rem;
+    align-self: stretch;
+    padding: 0rem 1.5rem;
+  }
+  .overviewRatingAverage {
+    font-size: 1.8rem;
+  }
+  .overviewRatingCount {
+    font-size: 0.5rem;
+  }
+}

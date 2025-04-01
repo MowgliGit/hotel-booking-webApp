@@ -7,27 +7,27 @@ const items = [
   {
     id: "1",
     name: "Hotel",
-    icon: "/img/sprite.svg#icon-home",
+    icon: `${process.env.PUBLIC_URL}/img/sprite.svg#icon-home`,
   },
   {
     id: "2",
     name: "Flight",
-    icon: "/img/sprite.svg#icon-aircraft-take-off",
+    icon: `${process.env.PUBLIC_URL}/img/sprite.svg#icon-aircraft-take-off`,
   },
   {
     id: "3",
     name: "Car Rental",
-    icon: "/img/sprite.svg#icon-key",
+    icon: `${process.env.PUBLIC_URL}/img/sprite.svg#icon-key`,
   },
   {
     id: "4",
     name: "Tours",
-    icon: "/img/sprite.svg#icon-map",
+    icon: `${process.env.PUBLIC_URL}/img/sprite.svg#icon-map`,
   },
   {
     id: "5",
     name: "Weather",
-    icon: "/img/sprite.svg#icon-cloud",
+    icon: `${process.env.PUBLIC_URL}/img/sprite.svg#icon-cloud`,
   },
 ];
 

@@ -17,20 +17,26 @@ export default function Header() {
         />
         <button className={styles.searchButton}>
           <svg className={styles.searchIcon}>
-            <use href="/img/sprite.svg#icon-magnifying-glass"></use>
+            <use
+              href={`${process.env.PUBLIC_URL}/img/sprite.svg#icon-magnifying-glass`}
+            ></use>
           </svg>
         </button>
       </form>
       <nav className={styles.userNav}>
         <div className={styles.userNavIconBox}>
           <svg className={styles.userNavIcon}>
-            <use href="/img/sprite.svg#icon-bookmark"></use>
+            <use
+              href={`${process.env.PUBLIC_URL}/img/sprite.svg#icon-bookmark`}
+            ></use>
           </svg>
           <span className={styles.userNavNotification}>7</span>
         </div>
         <div className={styles.userNavIconBox}>
           <svg className={styles.userNavIcon}>
-            <use href="/img/sprite.svg#icon-chat"></use>
+            <use
+              href={`${process.env.PUBLIC_URL}/img/sprite.svg#icon-chat`}
+            ></use>
           </svg>
           <span className={styles.userNavNotification}>13</span>
         </div>

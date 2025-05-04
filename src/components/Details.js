@@ -39,22 +39,22 @@ export default function Detail() {
             </p>
             <p className={styles.recommendFriends}>
               <img
-                src="img/user-3.jpg"
+                src={`${process.env.PUBLIC_URL}/img/user-3.jpg`}
                 className={styles.recommendPhoto}
                 alt="photo"
               />
               <img
-                src="img/user-4.jpg"
+                src={`${process.env.PUBLIC_URL}/img/user-4.jpg`}
                 className={styles.recommendPhoto}
                 alt="photo"
               />
               <img
-                src="img/user-5.jpg"
+                src={`${process.env.PUBLIC_URL}/img/user-5.jpg`}
                 className={styles.recommendPhoto}
                 alt="photo"
               />
               <img
-                src="img/user-6.jpg"
+                src={`${process.env.PUBLIC_URL}/img/user-6.jpg`}
                 className={styles.recommendPhoto}
                 alt="photo"
               />
@@ -69,7 +69,7 @@ export default function Detail() {
             </blockquote>
             <figcaption className={styles.reviewUser}>
               <img
-                src="img/user-1.jpg"
+                src={`${process.env.PUBLIC_URL}/img/user-1.jpg`}
                 alt="user"
                 className={styles.reviewPhoto}
               />
@@ -88,7 +88,7 @@ export default function Detail() {
             </blockquote>
             <figcaption className={styles.reviewUser}>
               <img
-                src="img/user-2.jpg"
+                src={`${process.env.PUBLIC_URL}/img/user-2.jpg`}
                 alt="user"
                 className={styles.reviewPhoto}
               />

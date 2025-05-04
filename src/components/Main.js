@@ -2,16 +2,49 @@ import styles from "../styles/Main.module.css";
 import Detail from "./Details";
 export default function Main() {
   const images = [
-    { id: 1, img: "img/hotel-1.jpg", class: "galleryPhoto" },
-    { id: 2, img: "img/hotel-2.jpg", class: "galleryPhoto" },
-    { id: 3, img: "img/hotel-3.jpg", class: "galleryPhoto" },
+    {
+      id: 1,
+      img: `${process.env.PUBLIC_URL}/img/hotel-1.jpg`,
+      class: "galleryPhoto",
+    },
+    {
+      id: 2,
+      img: `${process.env.PUBLIC_URL}/img/hotel-2.jpg`,
+      class: "galleryPhoto",
+    },
+    {
+      id: 3,
+      img: `${process.env.PUBLIC_URL}/img/hotel-3.jpg`,
+      class: "galleryPhoto",
+    },
   ];
+
   const icons = [
-    { id: 1, icon: "/img/sprite.svg#icon-star", class: "overviewIconStar" },
-    { id: 2, icon: "/img/sprite.svg#icon-star", class: "overviewIconStar" },
-    { id: 3, icon: "/img/sprite.svg#icon-star", class: "overviewIconStar" },
-    { id: 4, icon: "/img/sprite.svg#icon-star", class: "overviewIconStar" },
-    { id: 5, icon: "/img/sprite.svg#icon-star", class: "overviewIconStar" },
+    {
+      id: 1,
+      icon: `${process.env.PUBLIC_URL}/img/sprite.svg#icon-star`,
+      class: "overviewIconStar",
+    },
+    {
+      id: 2,
+      icon: `${process.env.PUBLIC_URL}/img/sprite.svg#icon-star`,
+      class: "overviewIconStar",
+    },
+    {
+      id: 3,
+      icon: `${process.env.PUBLIC_URL}/img/sprite.svg#icon-star`,
+      class: "overviewIconStar",
+    },
+    {
+      id: 4,
+      icon: `${process.env.PUBLIC_URL}/img/sprite.svg#icon-star`,
+      class: "overviewIconStar",
+    },
+    {
+      id: 5,
+      icon: `${process.env.PUBLIC_URL}/img/sprite.svg#icon-star`,
+      class: "overviewIconStar",
+    },
   ];
   return (
     <>

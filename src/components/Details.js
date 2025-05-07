@@ -15,7 +15,7 @@ export default function Detail() {
       <div className={styles.detail}>
         <div className={styles.description}>
           <p className={styles.paragraph}>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi,
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi
             reprehenderit quisquam! Provident in, consequatur blanditiis veniam
             qui est veritatis nostrum.
           </p>
